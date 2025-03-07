@@ -77,13 +77,6 @@
             color: #e74c3c;
             margin: 30px 0;
         }
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            max-width: 600px;
-            margin: 20px auto;
-        }
     </style>
 </head>
 <body>
@@ -127,11 +120,11 @@
             <p>¡Ya cumpliste 22! 🎉</p>
             <p>Ya estás viejita y así eeeh, pero ntp, así te amo, y ¡MUCHO!</p>
             <p>Gracias por ser parte de mi vida, realmente te amo mucho y no sé qué haría sin ti. ❤️</p>
-            <p>Desde el dia que me dijiste que guardaste esta cancion por mi, me recuerda a ti ❤️</p>
-            <p>Entonces es nuestra canción okey? okey :) en serio te amo demaciad (abajo hay otra sorpresita)❤️</p>
+            <p>Desde el día que me dijiste que guardaste esta canción por mí, me recuerda a ti ❤️</p>
+            <p>Entonces es nuestra canción, okey? Okey :) en serio, te amo demasiado (abajo hay otra sorpresita) ❤️</p>
         </div>
         <img src="imagen4.jpg" alt="Imagen final">
-        <p class="small-message">Tu eres el negro jijijij</p>
+        <p class="small-message">Tú eres el negro jijijij</p>
         <audio id="finalMusic" controls autoplay>
             <source src="cancion_final.mp3" type="audio/mpeg">
             Tu navegador no soporta la reproducción de audio.
@@ -139,15 +132,47 @@
         <button id="nextButton" class="big-button">Siguiente sorpresa</button>
     </div>
 
-    <!-- Quinta parte -->
+    <!-- Quinta parte (actualizada) -->
     <div id="part5" class="hidden">
         <div id="finalMessage">¡TE AMOOOOOOOOO! ❤️</div>
-        <div class="image-grid">
-            <img src="imagen8.jpeg" alt="Imagen 1">
-            <img src="imagen5.jpeg" alt="Imagen 2">
-            <img src="imagen6.jpeg" alt="Imagen 3">
-            <img src="imagen7.jpeg" alt="Imagen 4">
-        </div>
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 20px;">
+                <img src="imagen5.jpeg" alt="24 de septiembre de 2023">
+                <p>24 de septiembre de 2023 - Un día especial contigo ❤️</p>
+            </li>
+            <li style="margin-bottom: 20px;">
+                <img src="imagen6.jpeg" alt="18 de noviembre de 2023">
+                <p>18 de noviembre de 2023 - Un recuerdo inolvidable ❤️</p>
+            </li>
+            <li style="margin-bottom: 20px;">
+                <img src="imagen7.jpeg" alt="1 de diciembre de 2023">
+                <p>1 de diciembre de 2023 - Celebrando momentos juntos ❤️</p>
+            </li>
+            <li style="margin-bottom: 20px;">
+                <img src="imagen8.jpeg" alt="9 de marzo de 2024">
+                <p>9 de marzo de 2024 - ¡Casi tu cumple! Hace un año ❤️</p>
+            </li>
+            <li style="margin-bottom: 20px;">
+                <img src="imagen9.jpeg" alt="17 de mayo de 2024">
+                <p>17 de mayo de 2024 - Un día lleno de amor ❤️</p>
+            </li>
+            <li style="margin-bottom: 20px;">
+                <img src="imagen10.jpeg" alt="6 de junio de 2024">
+                <p>6 de junio de 2024 - Momentos inolvidables ❤️</p>
+            </li>
+            <li style="margin-bottom: 20px;">
+                <img src="imagen11.jpeg" alt="8 de junio de 2024">
+                <p>8 de junio de 2024 - Todo por ti ❤️</p>
+            </li>
+            <li style="margin-bottom: 20px;">
+                <img src="imagen12.jpeg" alt="16 de julio de 2024">
+                <p>16 de julio de 2024 - Juntos en cada paso ❤️</p>
+            </li>
+            <li style="margin-bottom: 20px;">
+                <img src="imagen13.jpeg" alt="24 de diciembre de 2024">
+                <p>24 de diciembre de 2024 - Una de las mejores navidades gracias a ti :) ❤️</p>
+            </li>
+        </ul>
     </div>
 
     <!-- Música de fondo -->
@@ -158,7 +183,7 @@
 
     <script>
         function showPart(partId) {
-            document.querySelectorAll('div[id^="part"]').forEach(part => {
+            document.querySelectorAll('div[id^=\"part\"]').forEach(part => {
                 part.classList.add('hidden');
             });
             document.getElementById(partId).classList.remove('hidden');
@@ -200,4 +225,3 @@
     </script>
 </body>
 </html>
-
